@@ -1,4 +1,4 @@
-# Build-KRM-Platform
+# configsync-kcc-demo
 2022 Google Cloud Developer Day Demo: how to build a declarative infra platform with KRM
 
 
@@ -23,7 +23,7 @@ Install and bootstrap Config Sync on your GKE clusters by runnning `install.sh`.
 Besides Config Sync, `install.sh` also generates a secret that's linked to your git token to authenticate the config sync to your Git repos
 
 `apply-spec.yaml` includes the initial configurations that config sync will use. The installation will automatically create a RootSync syncing from the repo/dir sepcified in the `apply-spec.yaml`. 
-In this example, https://github.com/600lyy/Build-KRM-Platform/cluster is the central root repo.
+In this example, https://github.com/600lyy/configsync-kcc-demo/cluster is the central root repo.
 
 Should you need more RootSync, creat a RootSync object with a unique name and place the yaml spec in the central root repo. Then commit and push to the root repo.
 
@@ -264,7 +264,7 @@ kubectl logs -n cnrm-system \
 ```
 
 ## The final Repo Hierarchy
-**Central Root Repo (`Build-KRM-Platform/cluster/`):**
+**Central Root Repo (`configsync-kcc-demo/cluster/`):**
 ```bash
 .
 ├── apply-spec.yaml
