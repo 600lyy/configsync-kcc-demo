@@ -69,9 +69,3 @@ sed -i "s/GITHUB_USERNAME/${GITHUB_USERNAME}/g" apply-spec.yaml
 
 register_cluster "admin" "europe-north1-a"
 install_config_sync "admin" "europe-north1-a"
-
-register_cluster "prod-eu" "europe-north1-a"
-install_config_sync "prod-eu" "europe-north1-a"
-
-register_cluster "prod-us" "us-central1-a"
-install_config_sync "prod-us" "us-central1-a"
