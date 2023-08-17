@@ -171,6 +171,7 @@ git push -u orighin main
 ### Delcare a KCC context for your target project
 
 To create GCP resources in your target project, you need to declare a context in KCC for each target project. 
+Upon the creation of this context, kcc creates a new KSA, and then a pod is created running with this KSA.
 ```bash
 # Make sure you update the right GSA in the configconnectorcontext.yaml
 cp backups/reposync-iam/stockholm-configconnectorcontext.yaml cluster/reposync-iam
